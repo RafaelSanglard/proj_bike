@@ -247,15 +247,15 @@ def rd3_question_7(df):
 
     st.dataframe(df_selected)
 
-   # df_xlsx = to_excel(df_selected)
+    return None
 
+   # df_xlsx = to_excel(df_selected)
     #st.download_button(
     #    label="📥 Download Buyinbg Suggestions",
     #    data=df_xlsx,
     #    file_name="buing_suggestions.xlsx",
-    )
+   # )
 
-    return None
 
 
 #def to_excel(df):

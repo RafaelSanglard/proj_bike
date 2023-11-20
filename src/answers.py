@@ -249,8 +249,8 @@ def rd3_question_7(df):
 
    # df_xlsx = to_excel(df_selected)
 
-    st.download_button(
-        label="📥 Download Buyinbg Suggestions",
+    #st.download_button(
+    #    label="📥 Download Buyinbg Suggestions",
     #    data=df_xlsx,
     #    file_name="buing_suggestions.xlsx",
     )

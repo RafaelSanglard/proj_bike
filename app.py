@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 
 def create_dataframe_section(df):
-    st.title("Sctions - Database Description")
+    st.title("Database - Descrição")
 
     col_1, col_2 = st.columns(2)
 
@@ -40,44 +40,46 @@ def create_dataframe_section(df):
 
 def create_answers_section(df):
     st.title("Main Questions Answers")
+    st.title("Principais Perguntas Respondidas")
 
-    st.header("First Round")
+    st.header("Primeira Rodada")
     st.subheader(
-        "How many bikes are being sold by their owners and how many bikes are being sold by distributors?"
+        "Quantas bicicletas estão sendo vendidas por seus proprietários e quantas bicicletas estão sendo vendidas por distribuidores?"
     )
     asw.rd1_question_9(df)
 
-    st.subheader("How many bikes are being sold are bikes from a unique owner?")
+    st.subheader("Quantas bicicletas sendo vendidas são de um único proprietário?")
     asw.rd1_question_13(df)
 
     st.subheader(
-        "Are high kilometer bikes more expensive than bikes with lower kilometer?"
+        "Bicicletas com alta quilometragem são mais caras do que bicicletas com menor quilometragem?"
     )
     asw.rd1_question_14(df)
 
     st.subheader(
-        "Are the bikes with a unique owner more expense on avarege than the other bikes?"
+        "As bicicletas de um único proprietário são mais caras, em média, do que as outras bicicletas?"
     )
     asw.rd2_question_1(df)
 
     st.subheader(
-        "Are the bikes that have more owners also the bikes with more kilometers traveled on avarege?"
+        "As bicicletas que têm mais proprietários também são as bicicletas com mais quilômetros rodados, em média?"
     )
     asw.rd2_question_2(df)
 
-    st.subheader("Which company has the most bikes registered?")
+    st.subheader("Qual empresa tem mais bicicletas registradas?")
     asw.rd2_question_7(df)
 
-    st.subheader("Which company has the most expensive bikes on avarege?")
+    st.subheader("Qual empresa tem as bicicletas mais caras, em média?")
     asw.rd3_question_2(df)
 
     st.subheader(
-        "Are the company that has the most expensive bikes registered also the company with the most bikes registered?"
+        "A empresa que tem as bicicletas mais caras registradas também é a empresa com mais bicicletas registradas?"
     )
     asw.rd3_question_5(df)
 
-    st.subheader("Which bikes are good for buying?")
+    st.subheader("Quais bicicletas são boas para comprar?")
     asw.rd3_question_7(df)
+
 
 
 def create_main_layout():
